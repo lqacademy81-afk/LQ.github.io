@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Академия Лисяна Куран - Изучение арабского языка</title>
+    <style>
+        /* === ОСНОВНЫЕ СТИЛИ (можно менять цвета здесь) === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* === ШАПКА САЙТА === */
+        header {
+            background: linear-gradient(135deg, #1e5128 0%, #4e9f3d 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        /* === НАВИГАЦИЯ === */
+        nav {
+            background: #1e5128;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #d4af37;
+        }
+        
+        /* === СЕКЦИИ === */
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        section h2 {
+            color: #1e5128;
+            border-bottom: 3px solid #d4af37;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        /* === КАРТОЧКИ КУРСОВ === */
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .course-card {
+            background: #f0f8f0;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #4e9f3d;
+        }
+        
+        .course-card h3 {
+            color: #1e5128;
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            font-size: 1.5em;
+            color: #d4af37;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        /* === КНИГИ === */
+        .books-list {
+            list-style: none;
+        }
+        
+        .books-list li {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 3px solid #4e9f3d;
+        }
+        
+        .book-title {
+            font-weight: bold;
+            color: #1e5128;
+        }
+        
+        .book-arabic {
+            font-family: 'Traditional Arabic', serif;
+            font-size: 1.3em;
+            color: #4e9f3d;
+            direction: rtl;
+        }
+        
+        /* === ПРОГРАММА === */
+        .program-level {
+            background: #f0f8f0;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        
+        .program-level h3 {
+            color: #1e5128;
+            margin-bottom: 10px;
+        }
+        
+        /* === КОНТАКТЫ === */
+        .contact-info {
+            text-align: center;
+            font-size: 1.1em;
+        }
+        
+        .contact-info a {
+            color: #1e5128;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* === ПОДВАЛ === */
+        footer {
+            background: #1e5128;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        /* === АДАПТИВНОСТЬ === */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            section {
+                margin: 20px 10px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- === ШАПКА (меняйте название и описание здесь) === -->
+<header>
+    <h1>Академия Лисяна Куран</h1>
+    <p>Изучение арабского языка с нуля до продвинутого уровня</p>
+</header>
+
+<!-- === НАВИГАЦИЯ === -->
+<nav>
+    <a href="#about">О нас</a>
+    <a href="#program">Программа</a>
+    <a href="#books">Книги</a>
+    <a href="#courses">Курсы</a>
+    <a href="#contacts">Контакты</a>
+</nav>
+
+<!-- === О НАС === -->
+<section id="about">
+    <h2>О нашей академии</h2>
+    <p>Академия Лисяна Куран - это место, где вы можете изучить арабский язык с помощью авторской методики. Мы используем собственные программы, тесты и презентации для эффективного обучения.</p>
+    <p style="margin-top: 15px;">Наша цель - помочь вам освоить арабский язык от самых основ до глубокого понимания сарфа и нахвы.</p>
+</section>
+
+<!-- === ПРОГРАММА ОБУЧЕНИЯ === -->
+<section id="program">
+    <h2>Программа обучения</h2>
+    
+    <div class="program-level">
+        <h3>📚 Начальный уровень</h3>
+        <p><strong>Учебники:</strong> Муалим Сани, Фатха Рахман</p>
+        <p><strong>Словарный запас:</strong> Мединский Клод (том 1, 2, 3), Аль-Арабия Бин Ядаيك</p>
+        <p>Начинаем с самого нуля, осваиваем чтение, письмо и базовую лексику.</p>
+    </div>
+    
+    <div class="program-level">
+        <h3>📖 Том 1 - Рихлят аль-итқан</h3>
+        <p>Основы сарфа (морфологии) и нахвы (синтаксиса).</p>
+    </div>
+    
+    <div class="program-level">
+        <h3>📗 Том 2 - Сарф</h3>
+        <p>Углублённое изучение сарфа (морфологии арабского языка).</p>
+    </div>
+    
+    <div class="program-level">
+        <h3>📘 Том 3 - Нахва</h3>
+        <p>Углублённое изучение нахвы (синтаксиса арабского языка).</p>
+    </div>
+</section>
+
+<!-- === КНИГИ === -->
+<section id="books">
+    <h2>Наши книги и учебники</h2>
+    
+    <h3 style="color: #1e5128; margin-top: 20px;">Авторские книги</h3>
+    <ul class="books-list">
+        <li>
+            <span class="book-arabic">إتقان لغة العربية</span><br>
+            <span class="book-title">Итқан лугат аль-арабия</span><br>
+            Авторское пособие для изучения арабского языка
+        </li>
+        <li>
+            <span class="book-arabic">رحلة الإتقان في اللغة العربية</span><br>
+            <span class="book-title">Рихлят аль-итқан фил лугат аль-арабия</span><br>
+            Авторский курс (3 тома): основы, сарф, нахва
+        </li>
+    </ul>
+    
+    <h3 style="color: #1e5128; margin-top: 30px;">Рекомендуемые учебники</h3>
+    <ul class="books-list">
+        <li><span class="book-title">Муалим Сани</span> - для начального уровня</li>
+        <li><span class="book-title">Фатха Рахман</span> - базовый курс</li>
+        <li><span class="book-title">Мединский Клод</span> (том 1, 2, 3) - для словарного запаса</li>
+        <li><span class="book-title">Аль-Арабия Бин Ядаيك</span> - практические упражнения</li>
+    </ul>
+</section>
+
+<!-- === КУРСЫ === -->
+<section id="courses">
+    <h2>Наши курсы</h2>
+    
+    <div class="courses-grid">
+        <div class="course-card">
+            <h3>Индивидуальные уроки</h3>
+            <p>Персональные занятия с преподавателем по вашей программе</p>
+            <div class="price">$50 / урок</div>
+            <p>✓ Индивидуальный подход<br>
+            ✓ Гибкий график<br>
+            ✓ Авторские материалы</p>
+        </div>
+        
+        <div class="course-card">
+            <h3>Групповые занятия</h3>
+            <p>Занятия в мини-группах для общения и практики</p>
+            <div class="price">Уточняйте</div>
+            <p>✓ Общение с другими учениками<br>
+            ✓ Разговорная практика<br>
+            ✓ Доступная цена</p>
+        </div>
+        
+        <div class="course-card">
+            <h3>Курс с нуля</h3>
+            <p>Полный курс для начинающих: от алфавита до основ сарфа и нахвы</p>
+            <div class="price">Уточняйте</div>
+            <p>✓ Системное обучение<br>
+            ✓ Авторские тесты<br>
+            ✓ Презентации и материалы</p>
+        </div>
+    </div>
+</section>
+
+<!-- === КОНТАКТЫ === -->
+<section id="contacts">
+    <h2>Контакты</h2>
+    <div class="contact-info">
+        <p>📧 Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>📱 Телефон: <a href="tel:+1234567890">+123 456 7890</a></p>
+        <p>💬 Telegram: <a href="https://t.me/your_username">@your_username</a></p>
+        <p style="margin-top: 20px;">Запишитесь на пробный урок уже сегодня!</p>
+    </div>
+</section>
+
+<!-- === ПОДВАЛ === -->
+<footer>
+    <p>&copy; 2026 Академия Лисяна Куран. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
